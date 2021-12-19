@@ -1,6 +1,7 @@
 {
-  "name": "reactsetup",
-  "version": "0.1.0",
+  "name": "web-opensources-courses",
+  "description": "Cursos gratuito de TI para toda comunidade, vamos democratizar nossos conhecimentos para contruir um futuro melhor juntos",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,6 +13,7 @@
     "next-images": "^1.4.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-icons": "^4.3.1",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {

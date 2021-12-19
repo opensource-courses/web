@@ -43,12 +43,13 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
 
+          <title>OpenSource Courses</title>
+
+          <link rel="icon" type="image/x-icon" href="/favicon.ico" />
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
             rel="stylesheet"
           />
-
-          <link rel="icon" href="https://rocketseat.com.br/favicon.ico" />
         </Head>
         <body>
           <Main />
