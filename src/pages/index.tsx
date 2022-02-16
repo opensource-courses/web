@@ -25,8 +25,8 @@ const Home: React.FC = () => {
           <h1>OpenSource Courses</h1>
 
           <p>
-            Cursos gratuito de TI para toda comunidade, vamos democratizar
-            nossos conhecimentos para contruir um futuro melhor juntos.
+            Cursos gratuitos de TI para toda comunidade, vamos democratizar
+            nossos conhecimentos para construir um futuro melhor juntos.
           </p>
 
           <Link href="#benefits">Vamos juntos! ✊🏾</Link>
