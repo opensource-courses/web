@@ -47,7 +47,6 @@ const Home: React.FC = () => {
               <FiCheckCircle /> Aprenda e contribua com a comunidade opensource
             </li>
             <li>
-              {' '}
               <FiCheckCircle /> Melhore suas habilidades com git e markdown
             </li>
           </ul>
@@ -60,7 +59,7 @@ const Home: React.FC = () => {
             <TutorialContainer>
               <h2>Para aprender</h2>
               <ol>
-                <li>Acessar nosso repositorio</li>
+                <li>Acessar nosso repositório</li>
                 <li>#NeverStopLearn</li>
               </ol>
             </TutorialContainer>

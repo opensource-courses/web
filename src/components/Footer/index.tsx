@@ -14,7 +14,11 @@ export const Footer: React.FC = () => {
         </a>
 
         <p>
-          Criado por <a href="https://github.com/odenirdev">Odenir Gomes</a>
+          Criado por <a href="https://github.com/odenirdev">Odenir Gomes</a>.{' '}
+          <a href="https://github.com/felipe-gomes-vicente">
+            Felipe Gomes Vicente
+          </a>{' '}
+          contribuiu com seu conhecimento.
         </p>
 
         <div />
