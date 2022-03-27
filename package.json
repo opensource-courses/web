@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "next": "9.5.2",
     "next-images": "^1.4.1",
     "react": "16.13.1",

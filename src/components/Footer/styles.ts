@@ -40,6 +40,7 @@ export const Container = styled.div`
 
   p {
     font-size: 1rem;
+    text-align: center;
 
     @media (max-width: 768px) {
       margin: 2rem 0;
@@ -62,5 +63,30 @@ export const Grid = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 2rem;
+
+    .logo {
+      height: 64px;
+
+      margin-bottom: 2rem;
+    }
   }
+`
+
+export const ContributorsList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    margin: 0.2rem;
+  }
+`
+
+export const Contributor = styled.img`
+  object-fit: contain;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 21px;
 `
