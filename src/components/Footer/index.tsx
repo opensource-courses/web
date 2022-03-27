@@ -1,32 +1,68 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FiChevronUp } from 'react-icons/fi'
+import axios from 'axios'
 
 import { Link } from '../../components/Link'
 
-import { Container, Grid } from './styles'
+import * as S from './styles'
+
+interface Contributor {
+  src: string
+  avatar: string
+}
 
 export const Footer: React.FC = () => {
+  const [contributors, setContributors] = useState<Contributor[]>([])
+
+  const parseContributor = (value: any) => {
+    return {
+      avatar: value.avatar_url,
+      src: value.html_url
+    }
+  }
+
+  useEffect(() => {
+    ;(async () => {
+      const response = await axios.get(
+        'https://api.github.com/repos/opensource-courses/courses/contributors'
+      )
+
+      console.log(response.data)
+
+      const serializedContributors = response.data.map(value =>
+        parseContributor(value)
+      )
+
+      setContributors(serializedContributors)
+    })()
+  }, [])
+
   return (
-    <Container>
-      <Grid>
+    <S.Container>
+      <S.Grid>
         <a href="#">
           <img src="/logo.webp" className="logo" />
         </a>
 
-        <p>
-          Criado por <a href="https://github.com/odenirdev">Odenir Gomes</a>.{' '}
-          <a href="https://github.com/felipe-gomes-vicente">
-            Felipe Gomes Vicente
-          </a>{' '}
-          contribuiu com seu conhecimento.
-        </p>
+        <S.ContributorsList>
+          {contributors.map((contributor, index) => (
+            <a
+              key={index}
+              href={contributor.src}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <S.Contributor src={contributor.avatar} />
+            </a>
+          ))}
+        </S.ContributorsList>
 
-        <div />
+        <p>MIT License (c) 2022 Opensource Courses</p>
 
         <Link className="gotoTop" href="#header">
           <FiChevronUp />
         </Link>
-      </Grid>
-    </Container>
+      </S.Grid>
+    </S.Container>
   )
 }
