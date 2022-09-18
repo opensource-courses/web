@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 import { Container, Grid } from './styles'
@@ -18,7 +19,16 @@ export const Header: React.FC = () => {
             <a href="#benefits">Vantagens</a>
           </li>
           <li>
-            <a href="#tutorial">Acessar</a>
+            <a
+              href="https://blog-opensourcecourses.notion.site/Open-source-Courses-1e3bde73c5eb416e903b21172f37cf90"
+              target="_blank"
+              rel="noreferrer"
+            >
+              🏗️ Plataforma
+            </a>
+          </li>
+          <li>
+            <a href="#tutorial">Github</a>
           </li>
         </ul>
       </Grid>

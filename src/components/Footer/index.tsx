@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { FiChevronUp } from 'react-icons/fi'
 import axios from 'axios'
 
-import { Link } from '../../components/Link'
+import { Anchor } from '../Anchor'
 
 import * as S from './styles'
 
@@ -26,9 +26,6 @@ export const Footer: React.FC = () => {
       const response = await axios.get(
         'https://api.github.com/repos/opensource-courses/courses/contributors'
       )
-
-      console.log(response.data)
-
       const serializedContributors = response.data.map(value =>
         parseContributor(value)
       )
@@ -59,9 +56,9 @@ export const Footer: React.FC = () => {
 
         <p>MIT License (c) 2022 Opensource Courses</p>
 
-        <Link className="gotoTop" href="#header">
+        <Anchor className="gotoTop" href="#header">
           <FiChevronUp />
-        </Link>
+        </Anchor>
       </S.Grid>
     </S.Container>
   )

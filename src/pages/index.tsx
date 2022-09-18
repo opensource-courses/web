@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { FiCheckCircle } from 'react-icons/fi'
 
-import { Link } from '../components/Link'
+import { Anchor } from '../components/Anchor'
 import { PageContainer } from '../components/PageContainer'
 
 import {
@@ -29,7 +29,7 @@ const Home: React.FC = () => {
             nossos conhecimentos para construir um futuro melhor juntos.
           </p>
 
-          <Link href="#benefits">Vamos juntos! ✊🏾</Link>
+          <Anchor href="#benefits">Vamos juntos! ✊🏾</Anchor>
         </Header>
         <BenefitsArticle id="benefits">
           <h1>Vantagens</h1>
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
             </li>
           </ul>
 
-          <Link href="#tutorial">Partiu! 🚀</Link>
+          <Anchor href="#tutorial">Partiu! 🚀</Anchor>
         </BenefitsArticle>
         <TutorialArticle id="tutorial">
           <h1>Contribuindo com o futuro de desenvolvedores</h1>
@@ -73,12 +73,12 @@ const Home: React.FC = () => {
               </ol>
             </TutorialContainer>
           </ContainerOfTutorials>
-          <Link
+          <Anchor
             href="https://github.com/odenirdev/opensources-courses"
             target="_black"
           >
             Acessar Repositório 📦
-          </Link>
+          </Anchor>
         </TutorialArticle>
       </Container>
     </PageContainer>

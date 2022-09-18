@@ -57,8 +57,9 @@ export const Grid = styled.div`
       margin-right: 1rem;
 
       a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-transform: uppercase;
+        font-weight: 700;
 
         text-decoration: none;
         color: var(--white);

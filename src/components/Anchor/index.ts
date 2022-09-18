@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Link = styled.a`
+export const Anchor = styled.a`
   min-height: 42px;
   padding: 0.5rem 2rem;
   background: linear-gradient(98deg, #42a539 80%, #56c5ff 100%);
