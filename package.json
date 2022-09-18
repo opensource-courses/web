@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.26.1",
-    "next": "9.5.2",
+    "next": "12.1.0",
     "next-images": "^1.4.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
